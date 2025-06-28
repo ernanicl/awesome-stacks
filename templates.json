@@ -1227,16 +1227,6 @@
                     "type": "password",
                     "label": "Admin password",
                     "disabled": true
-                },
-                {
-                    "name": "HTTPS",
-                    "value": "1",
-                    "preset": true
-                },
-                {
-                    "name": "PS_ENABLE_SSL",
-                    "value": "1",
-                    "preset": true
                 }
             ]
         },
@@ -1551,7 +1541,7 @@
                 },
                 {
                     "name": "SMTP_PORT",
-                    "value": 587,
+                    "value": "587",
                     "preset": true
                 }
             ]
