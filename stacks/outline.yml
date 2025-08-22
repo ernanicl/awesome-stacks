@@ -1,8 +1,9 @@
 # DOMAIN=example.com docker stack deploy -c outline.yml outline
+# chown 1001:1001 data
 
 services:
   web:
-    image: outlinewiki/outline:${VERSION:-0.82.0}
+    image: outlinewiki/outline:${VERSION:-0.86.1}
     environment:
       - PORT=3000
       - PGSSLMODE=disable
