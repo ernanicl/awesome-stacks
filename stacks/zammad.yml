@@ -4,7 +4,7 @@
 # chown -R 1000:1000 elasticsearch storage var
 
 x-zammad: &zammad
-  image: zammad/zammad-docker-compose:${VERSION:-6.5.1}
+  image: zammad/zammad-docker-compose:${VERSION:-6.5.2}
   volumes:
     - ${VOLUME_PATH}storage:/opt/zammad/storage
     - ${VOLUME_PATH}var:/opt/zammad/var
@@ -50,12 +50,13 @@ services:
     image: zammad/zammad-docker-compose:zammad-elasticsearch-5.2.3-32
     environment:
       - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
     volumes:
       - ${VOLUME_PATH}elasticsearch:/usr/share/elasticsearch/data
     deploy:
       resources:
         limits:
-          memory: 5G
+          memory: 2G
     networks:
       - internal
 

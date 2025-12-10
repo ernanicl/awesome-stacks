@@ -220,6 +220,7 @@
             "title": "Discourse",
             "description": "Discourse est une plateforme de discussion open source construite pour la prochaine décennie de l'Internet.",
             "categories": ["Forum"],
+            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -691,6 +692,21 @@
                 {
                     "name": "CALENDSO_ENCRYPTION_KEY",
                     "preset": true
+                },
+                {
+                    "name": "NEXT_PUBLIC_DISABLE_SIGNUP",
+                    "label": "Disable Signup",
+                    "type": "select",
+                    "select": [
+                        {
+                            "text": "No",
+                            "value": "false"
+                        },
+                        {
+                            "text": "Yes",
+                            "value": "true"
+                        }
+                    ]
                 }
             ]
         },
@@ -1312,7 +1328,7 @@
             "type": 2,
             "title": "Commento",
             "description": "Un système de commentaires rapide et sans ballonnement pour favoriser la discussion sur votre site Web.",
-            "categories": ["Système de commentaires"],
+            "categories": ["Commentaires"],
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -2111,6 +2127,7 @@
             "title": "Bookstack",
             "description": "Application de gestion des connaissances open source",
             "categories": ["Connaissances"],
+            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
