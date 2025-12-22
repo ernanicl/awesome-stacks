@@ -74,7 +74,6 @@
             "title": "Mattermost",
             "description": "Mattermost est un service de discussion instantanée Open source. C'est une alternative open source à Slack.",
             "categories": ["Tchat"],
-            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -573,7 +572,6 @@
             "title": "n8n",
             "description": "Alternative open-source à Zapier",
             "categories": ["Automatisation"],
-            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -836,7 +834,6 @@
             "title": "Invoice-ninja",
             "description": "Invoice Ninja est une application libre et open-source pour la facturation de vos clients.",
             "categories": ["Facturation"],
-            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -929,7 +926,6 @@
             "title": "Etherpad",
             "description": "Etherpad est un éditeur en ligne Open Source qui permet une édition collaborative en temps réel.",
             "categories": ["Editeur"],
-            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -1889,7 +1885,6 @@
             "title": "Mobilizon",
             "description": "Alternative open-source à Facebook Events, Meetup, Eventbrite et autres plateformes de gestion d'événements.",
             "categories": ["Événements"],
-            "manual": true,
             "enabled": true,
             "trial": 7,
             "price": 19,
@@ -2244,22 +2239,6 @@
                     "disabled": true
                 }
             ]
-        },
-        {
-            "type": 2,
-            "title": "Annif",
-            "description": "Outil d'indexation de sujets automatisé multi-algorithmes pour les universités, bibliothèques et les musées.",
-            "categories": ["Indexation"],
-            "manual": true,
-            "enabled": false,
-            "trial": 7,
-            "price": 19,
-            "logo": "https://i.imgur.com/SmbJEdf.png",
-            "website": "https://annif.org/",
-            "repository": {
-                "url": "https://github.com/ethibox/awesome-stacks",
-                "stackfile": "stacks/annif.yml"
-            }
         },
         {
             "type": 2,

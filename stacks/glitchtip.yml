@@ -1,11 +1,12 @@
 # DOMAIN=example.com docker stack deploy -c glitchtip.yml glitchtip
 
 x-glitchtip: &glitchtip
-  image: glitchtip/glitchtip:${VERSION:-v5.1.1}
+  image: glitchtip/glitchtip:${VERSION:-v5.2.0}
   environment:
     - GLITCHTIP_DOMAIN=${SCHEME:-https}://${DOMAIN:-glitchtip.localhost}
     - DATABASE_URL=postgres://glitchtip:myp@ssw0rd@postgres:5432/postgres
     - EMAIL_URL=smtp://${SMTP_USER}:${SMTP_PASSWORD}@${SMTP_HOST}:${SMTP_PORT}
+    - CELERY_WORKER_CONCURRENCY=${CELERY_WORKER_CONCURRENCY:-1}
     - DEFAULT_FROM_EMAIL=${SMTP_FROM}
   volumes:
     - ${VOLUME_PATH}uploads:/code/uploads
