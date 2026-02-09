@@ -1,5 +1,4 @@
 # DOMAIN=example.com docker stack deploy -c mattermost.yml mattermost
-# ./bin/mmctl --local user create --system-admin --email admin@example.com --username admin --password myp@ssw0rd
 
 services:
   init:
@@ -15,7 +14,7 @@ services:
         condition: on-failure
 
   app:
-    image: ${IMAGE:-mattermost/mattermost-team-edition}:${VERSION:-11.2.1}
+    image: ${IMAGE:-mattermost/mattermost-team-edition}:${VERSION:-11.3.0}
     volumes:
       - ${VOLUME_PATH}data:/mattermost/data
       - ${VOLUME_PATH}config:/mattermost/config
@@ -32,6 +31,10 @@ services:
       - MM_LOCALIZATIONSETTINGS_AVAILABLELOCALES=fr,en,de
       - MM_EMAILSETTINGS_ENABLEPREVIEWMODEBANNER=false
       - edition=team
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
     networks:
       - internal
 
@@ -41,6 +44,9 @@ services:
       - APP_PORT_NUMBER=8065
       - APP_HOST={{ index .Service.Labels "com.docker.stack.namespace" }}_app
     deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
       labels:
         - traefik.enable=true
         - traefik.http.routers.mattermost-${NUMBER:-1}.rule=Host(`${DOMAIN:-mattermost.localhost}`)
@@ -62,6 +68,10 @@ services:
       test: ["CMD", "pg_isready", "-U", "mattermost"]
     volumes:
       - ${VOLUME_PATH}postgres:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
     networks:
       - internal
 

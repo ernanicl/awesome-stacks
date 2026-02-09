@@ -7,8 +7,11 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Paris
-      - DOCKER_MODS=linuxserver/calibre-web:calibre
+      - DOCKER_MODS=linuxserver/mods:universal-calibre
     deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
       labels:
         - traefik.enable=true
         - traefik.http.routers.calibre-${NUMBER:-1}.rule=Host(`${DOMAIN:-calibre.localhost}`)

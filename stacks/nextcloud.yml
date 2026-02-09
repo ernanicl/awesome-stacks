@@ -1,7 +1,7 @@
 # DOMAIN=example.com docker stack deploy -c nextcloud.yml nextcloud
 
 x-nextcloud: &nextcloud
-  image: nextcloud:${VERSION:-32.0.3-fpm-alpine}
+  image: nextcloud:${VERSION:-32.0.5-fpm-alpine}
   environment:
     - DOMAIN=${DOMAIN:-nextcloud.localhost}
     - MYSQL_HOST=mariadb
@@ -30,6 +30,7 @@ x-nextcloud: &nextcloud
     - NEXTCLOUD_ADMIN_USER=${ADMIN_USERNAME:-admin}
     - NEXTCLOUD_ADMIN_PASSWORD=${ADMIN_PASSWORD:-myp@ssw0rd}
     - NC_default_phone_region=${NC_default_phone_region:-FR}
+    - NC_loglevel=${NC_loglevel:-2}
     - NC_maintenance_window_start=1
   volumes:
     - ${VOLUME_PATH}nextcloud:/var/www/html:cached
@@ -46,6 +47,9 @@ services:
     volumes:
       - ${VOLUME_PATH}nextcloud:/var/www/html:cached
     deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
       labels:
         - traefik.enable=true
         - traefik.http.routers.nextcloud-${NUMBER:-1}.rule=Host(`${DOMAIN:-nextcloud.localhost}`)
@@ -76,6 +80,10 @@ services:
         echo "php /var/www/html/occ maintenance:repair --include-expensive -n" >> /docker-entrypoint-hooks.d/post-installation/setup.sh
         chmod +x /docker-entrypoint-hooks.d/post-installation/setup.sh
         exec /entrypoint.sh php-fpm
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
 
   cron:
     <<: *nextcloud
@@ -86,6 +94,10 @@ services:
         echo "0 2 * * * php /var/www/html/occ db:add-missing-indices -n" >> /var/spool/cron/crontabs/www-data
         echo "0 3 * * * php /var/www/html/occ maintenance:repair --include-expensive -n" >> /var/spool/cron/crontabs/www-data
         exec /cron.sh
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
 
   mariadb:
     image: mariadb:${MARIADB_VERSION:-11.4}
@@ -99,6 +111,10 @@ services:
       - ${VOLUME_PATH}mariadb:/var/lib/mysql
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
     networks:
       - internal
 
@@ -109,6 +125,10 @@ services:
     command: /bin/sh -c 'redis-server --requirepass $$REDIS_HOST_PASSWORD'
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
+    deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
     networks:
       - internal
 

@@ -3,7 +3,7 @@
 
 services:
   kanboard:
-    image: kanboard/kanboard:${VERSION:-v1.2.48}
+    image: kanboard/kanboard:${VERSION:-v1.2.49}
     environment:
       - PLUGIN_INSTALLER=true
       - MAIL_TRANSPORT=${MAIL_TRANSPORT:-smtp}
@@ -16,6 +16,9 @@ services:
       - ${VOLUME_PATH}data:/var/www/app/data
       - ${VOLUME_PATH}plugins:/var/www/app/plugins
     deploy:
+      resources:
+        limits:
+          memory: ${MEMORY_LIMIT:-2G}
       labels:
         - traefik.enable=true
         - traefik.http.routers.kanboard-${NUMBER:-1}.rule=Host(`${DOMAIN:-kanboard.localhost}`)
