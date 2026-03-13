@@ -6,7 +6,7 @@ services:
     healthcheck:
       test: ["CMD-SHELL", "curl -fsSL http://localhost:9980 || exit 1"]
     environment:
-      - domain=${ALLOWED_DOMAINS:-.*}
+      - aliasgroup1=${ALLOWED_DOMAINS:-https://.*:443}
       - extra_params=--o:ssl.enable=false --o:ssl.termination=true --o:welcome.enable=false
     deploy:
       resources:
@@ -15,9 +15,6 @@ services:
       labels:
         - traefik.enable=true
         - traefik.http.routers.collabora-${NUMBER:-1}.rule=Host(`${DOMAIN:-collabora.localhost}`)
-        - traefik.http.routers.collabora-${NUMBER:-1}.entrypoints=${SCHEME:-https}
-        - traefik.http.routers.collabora-${NUMBER:-1}.service=collabora-${NUMBER:-1}
-        - traefik.http.routers.collabora-${NUMBER:-1}.tls.certresolver=letsencrypt
         - traefik.http.routers.collabora-${NUMBER:-1}.middlewares=collabora-${NUMBER:-1}-headers
         - traefik.http.middlewares.collabora-${NUMBER:-1}-headers.headers.customRequestHeaders.X-Forwarded-Proto=https
         - traefik.http.services.collabora-${NUMBER:-1}.loadbalancer.server.port=9980

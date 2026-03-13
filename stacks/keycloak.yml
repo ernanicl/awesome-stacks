@@ -13,7 +13,7 @@ services:
         condition: on-failure
 
   web:
-    image: keycloak/keycloak:${VERSION:-26.5.1}
+    image: keycloak/keycloak:${VERSION:-26.5.4}
     command: start
     environment:
       - KC_DB=postgres
@@ -35,9 +35,6 @@ services:
       labels:
         - traefik.enable=true
         - traefik.http.routers.keycloak-${NUMBER:-1}.rule=Host(`${DOMAIN:-keycloak.localhost}`)
-        - traefik.http.routers.keycloak-${NUMBER:-1}.entrypoints=${SCHEME:-https}
-        - traefik.http.routers.keycloak-${NUMBER:-1}.service=keycloak-${NUMBER:-1}
-        - traefik.http.routers.keycloak-${NUMBER:-1}.tls.certresolver=letsencrypt
         - traefik.http.services.keycloak-${NUMBER:-1}.loadbalancer.server.port=8080
     networks:
       - internal

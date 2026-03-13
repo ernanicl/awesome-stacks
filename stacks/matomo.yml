@@ -1,5 +1,22 @@
 # DOMAIN=example.com docker stack deploy -c matomo.yml matomo
 
+x-matomo: &matomo
+  image: matomo:${VERSION:-5.7.1-fpm-alpine}
+  environment:
+    - MATOMO_DATABASE_USERNAME=matomo
+    - MATOMO_DATABASE_DBNAME=matomo
+    - MATOMO_DATABASE_PASSWORD=myp@ssw0rd
+    - MATOMO_DATABASE_HOST=mariadb
+  volumes:
+    - ${VOLUME_PATH}config:/var/www/html/config:cached
+    - ${VOLUME_PATH}data:/var/www/html:cached
+  deploy:
+    resources:
+      limits:
+        memory: ${MEMORY_LIMIT:-2G}
+  networks:
+    - internal
+
 services:
   nginx:
     image: ethibox/nginx-proxy:latest
@@ -8,7 +25,7 @@ services:
       - SERVER_NAME={{ index .Service.Labels "com.docker.stack.namespace" }}_app
     volumes:
       - ${VOLUME_PATH}data:/var/www/html:ro
-      - ${VOLUME_PATH}data:/var/www/html/config:ro
+      - ${VOLUME_PATH}config:/var/www/html/config:ro
     deploy:
       resources:
         limits:
@@ -16,30 +33,22 @@ services:
       labels:
         - traefik.enable=true
         - traefik.http.routers.matomo-${NUMBER:-1}.rule=Host(`${DOMAIN:-matomo.localhost}`)
-        - traefik.http.routers.matomo-${NUMBER:-1}.entrypoints=${SCHEME:-https}
-        - traefik.http.routers.matomo-${NUMBER:-1}.service=matomo-${NUMBER:-1}
-        - traefik.http.routers.matomo-${NUMBER:-1}.tls.certresolver=letsencrypt
         - traefik.http.services.matomo-${NUMBER:-1}.loadbalancer.server.port=80
     networks:
       - internal
       - traefik
 
   app:
-    image: matomo:${VERSION:-5.6.2-fpm-alpine}
-    environment:
-      - MATOMO_DATABASE_USERNAME=matomo
-      - MATOMO_DATABASE_DBNAME=matomo
-      - MATOMO_DATABASE_PASSWORD=myp@ssw0rd
-      - MATOMO_DATABASE_HOST=mariadb
-    volumes:
-      - ${VOLUME_PATH}config:/var/www/html/config:cached
-      - ${VOLUME_PATH}data:/var/www/html:cached
-    deploy:
-      resources:
-        limits:
-          memory: ${MEMORY_LIMIT:-2G}
-    networks:
-      - internal
+    <<: *matomo
+
+  cron:
+    <<: *matomo
+    entrypoint: /bin/sh
+    command:
+      - -c
+      - |
+        echo "0 * * * * /usr/local/bin/php /var/www/html/console core:archive --url=http://localhost" > /var/spool/cron/crontabs/www-data
+        exec crond -f
 
   mariadb:
     image: mariadb:${MARIADB_VERSION:-10.5.9}
@@ -53,7 +62,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: ${MEMORY_LIMIT:-3G}
+          memory: ${MEMORY_LIMIT:-2G}
     networks:
       - internal
 

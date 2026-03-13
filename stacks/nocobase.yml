@@ -2,7 +2,7 @@
 
 services:
   web:
-    image: nocobase/nocobase:${VERSION:-1.9.36}
+    image: nocobase/nocobase:${VERSION:-1.9.54}
     environment:
       - APP_ENV=production
       - INIT_ROOT_EMAIL=${ADMIN_EMAIL:-admin@example.com}
@@ -24,9 +24,6 @@ services:
       labels:
         - traefik.enable=true
         - traefik.http.routers.nocobase-${NUMBER:-1}.rule=Host(`${DOMAIN:-nocobase.localhost}`)
-        - traefik.http.routers.nocobase-${NUMBER:-1}.entrypoints=${SCHEME:-https}
-        - traefik.http.routers.nocobase-${NUMBER:-1}.service=nocobase-${NUMBER:-1}
-        - traefik.http.routers.nocobase-${NUMBER:-1}.tls.certresolver=letsencrypt
         - traefik.http.services.nocobase-${NUMBER:-1}.loadbalancer.server.port=80
     networks:
       - internal

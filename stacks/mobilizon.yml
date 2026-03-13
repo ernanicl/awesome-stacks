@@ -13,7 +13,7 @@ services:
         condition: on-failure
 
   web:
-    image: ${IMAGE:-kaihuri/mobilizon}:${VERSION:-5.2.0}
+    image: ${IMAGE:-kaihuri/mobilizon}:${VERSION:-5.2.2}
     environment:
       - DOCKER=true
       - MIX_ENV=${MIX_ENV:-prod}
@@ -42,9 +42,6 @@ services:
       labels:
         - traefik.enable=true
         - traefik.http.routers.mobilizon-${NUMBER:-1}.rule=Host(`${DOMAIN:-mobilizon.localhost}`)
-        - traefik.http.routers.mobilizon-${NUMBER:-1}.entrypoints=${SCHEME:-https}
-        - traefik.http.routers.mobilizon-${NUMBER:-1}.service=mobilizon-${NUMBER:-1}
-        - traefik.http.routers.mobilizon-${NUMBER:-1}.tls.certresolver=letsencrypt
         - traefik.http.services.mobilizon-${NUMBER:-1}.loadbalancer.server.port=4000
     networks:
       - internal
