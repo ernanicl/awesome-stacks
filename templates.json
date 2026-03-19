@@ -95,7 +95,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/mattermost.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "4aab0a6dcb81934d65eb610b0a901e637c0188c3"
       },
       "env": [
         {
@@ -128,7 +128,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/kanboard.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "442ef3c0d3885651773960faf800fbb0ffa5b8a0"
       },
       "env": [
         {
@@ -228,7 +228,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/matomo.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "e7cbd4f727cf4954484e7d4949cdbdbc3eba35cd"
       }
     },
     {
@@ -496,7 +496,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/zammad.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "fce746d9f056fca0bbb8fd4b15a51574ea8e9b3e"
       }
     },
     {
@@ -512,7 +512,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/rocketchat.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "6fb32861ff049a7da0c7143d07bb88ac3f69be5f"
       }
     },
     {
@@ -529,7 +529,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/peertube.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "905decbd4bacbc1c0d96853e0e45c4f2c6f7204e"
       },
       "env": [
         {
@@ -604,7 +604,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/n8n.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "f8318e29d099e63852e655479f186e13d4f125fd"
       },
       "env": [
         {
@@ -647,7 +647,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/calendso.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "c66ef279aa61dd29c89d1c1e804603aae37aaa39"
       },
       "env": [
         {
@@ -828,7 +828,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/wekan.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "e41efd2b44639bf1155e61793d74a5adf6201fc6"
       },
       "env": [
         {
@@ -1097,7 +1097,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/mautic.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "f29b973ce6cac22bd9ce937cc6f9c45035e8ffa9"
       },
       "env": [
         {
@@ -1158,7 +1158,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/element.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "d8b216cf0aa0f7c2c9b6df31ff871b6856bd84e4"
       }
     },
     {
@@ -1174,7 +1174,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/metabase.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "80e8ead675ddec855f36e01bf55883cb3dc4348c"
       }
     },
     {
@@ -2151,7 +2151,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/nocobase.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "050b6224849b57d9930ac48701e1a662ad4ac670"
       },
       "env": [
         {
@@ -2827,7 +2827,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/vikunja.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "378f98a44560f13f710449f62db1c1a34151ea78"
       }
     },
     {
