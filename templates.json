@@ -4,9 +4,9 @@
     {
       "type": 2,
       "title": "Nextcloud",
-      "description": "Nextcloud est un lieu sûr pour toutes vos données - Accédez et partagez vos fichiers, calendriers, contacts, courriels et plus encore...",
+      "description": "Nextcloud est un lieu sûr pour toutes vos données - Accédez et partagez vos fichiers, calendriers, contacts, courriels et plus encore.",
       "categories": [
-        "Cloud"
+        "Stockage"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/ecFVnV8.png",
@@ -14,7 +14,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/nextcloud.yml",
-        "commit": "3989ede2797f4b56c546db0430191947956a878d"
+        "commit": "c238af9ef794300868e47688580c51d9f7f14469"
       },
       "env": [
         {
@@ -85,9 +85,9 @@
     {
       "type": 2,
       "title": "Mattermost",
-      "description": "Mattermost est un service de discussion instantanée Open source. C'est une alternative open source à Slack.",
+      "description": "Mattermost est une plateforme de messagerie instantanée open-source pour collaborer en équipe.",
       "categories": [
-        "Tchat"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/aWStYef.png",
@@ -118,7 +118,7 @@
     {
       "type": 2,
       "title": "Kanboard",
-      "description": "Kanboard est un logiciel de gestion de projet Kanban libre et open source.",
+      "description": "Kanboard est un logiciel open-source de gestion de projet Kanban, simple et efficace.",
       "categories": [
         "Gestion de projet"
       ],
@@ -187,9 +187,9 @@
     {
       "type": 2,
       "title": "Odoo",
-      "description": "Odoo est une suite d'applications d'entreprise distribuées de logiciels libres.",
+      "description": "Odoo est une suite open-source d'applications de gestion d'entreprise (ERP, CRM, comptabilité).",
       "categories": [
-        "ERP"
+        "Finance"
       ],
       "manual": true,
       "enabled": true,
@@ -218,7 +218,7 @@
     {
       "type": 2,
       "title": "Matomo",
-      "description": "Matomo est un logiciel libre et open source de mesure de statistiques web.",
+      "description": "Matomo est un logiciel open-source de mesure de statistiques web.",
       "categories": [
         "Analytics"
       ],
@@ -234,9 +234,9 @@
     {
       "type": 2,
       "title": "Discourse",
-      "description": "Discourse est une plateforme de discussion open source construite pour la prochaine décennie de l'Internet.",
+      "description": "Discourse est une plateforme de forum open-source moderne pour créer des communautés en ligne.",
       "categories": [
-        "Forum"
+        "Communication"
       ],
       "manual": true,
       "enabled": true,
@@ -315,9 +315,9 @@
     {
       "type": 2,
       "title": "Mastodon",
-      "description": "Mastodon est une alternative libre et open-source à Twitter.",
+      "description": "Mastodon est un réseau social open-source décentralisé sans publicité ni tracking.",
       "categories": [
-        "Réseau social"
+        "Social"
       ],
       "manual": true,
       "enabled": true,
@@ -397,7 +397,7 @@
     {
       "type": 2,
       "title": "Wordpress",
-      "description": "WordPress est l'application web la plus utilisé au monde pour créer un beau site web.",
+      "description": "WordPress est l'application web open-source la plus utilisée au monde pour créer un beau site web.",
       "categories": [
         "Blog"
       ],
@@ -407,15 +407,15 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/wordpress.yml",
-        "commit": "3989ede2797f4b56c546db0430191947956a878d"
+        "commit": "5092b5ba39fbcf1aedfeb317fd814ab6389efdbc"
       }
     },
     {
       "type": 2,
       "title": "Formbricks",
-      "description": "Formbricks est un outil de création de formulaires en ligne.",
+      "description": "Formbricks est un outil open-source de création de formulaires et sondages pour collecter des retours utilisateurs.",
       "categories": [
-        "Formulaire"
+        "Marketing"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/GK6PrCY.png",
@@ -485,9 +485,9 @@
     {
       "type": 2,
       "title": "Zammad",
-      "description": "Zammad est un système de support client / helpdesk open source basé sur le web.",
+      "description": "Zammad est un système de support client open-source pour gérer tickets, emails et chats.",
       "categories": [
-        "Helpdesk"
+        "Marketing"
       ],
       "manual": true,
       "enabled": true,
@@ -496,15 +496,15 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/zammad.yml",
-        "commit": "fce746d9f056fca0bbb8fd4b15a51574ea8e9b3e"
+        "commit": "54f9bb2b7bd7247307416154875a697c068c7cc4"
       }
     },
     {
       "type": 2,
       "title": "Rocketchat",
-      "description": "Rocket.Chat est un logiciel de discussion en ligne.",
+      "description": "Rocket.Chat est une plateforme de communication open-source avec messagerie, appels vidéo et partage de fichiers.",
       "categories": [
-        "Tchat"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/mTR06gP.png",
@@ -518,9 +518,9 @@
     {
       "type": 2,
       "title": "Peertube",
-      "description": "PeerTube est une alternative libre et open-source à YouTube.",
+      "description": "PeerTube est une plateforme d'hébergement vidéo open-source décentralisée, sans publicité ni algorithme.",
       "categories": [
-        "Streaming"
+        "Social"
       ],
       "manual": true,
       "enabled": true,
@@ -593,7 +593,7 @@
     {
       "type": 2,
       "title": "n8n",
-      "description": "Alternative open-source à Zapier",
+      "description": "n8n est un outil d'automatisation de workflows open-source pour connecter vos applications et automatiser vos tâches.",
       "categories": [
         "Automatisation"
       ],
@@ -604,7 +604,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/n8n.yml",
-        "commit": "f8318e29d099e63852e655479f186e13d4f125fd"
+        "commit": "48846379f593f78b85fad04c4b10fe8a4470fe37"
       },
       "env": [
         {
@@ -636,9 +636,9 @@
     {
       "type": 2,
       "title": "Calendso",
-      "description": "Alternative open-source à Calendly",
+      "description": "Cal.com est un outil open-source de planification de rendez-vous, hébergeable soi-même.",
       "categories": [
-        "Calendar"
+        "Communication"
       ],
       "manual": true,
       "enabled": true,
@@ -737,9 +737,9 @@
     {
       "type": 2,
       "title": "Chatwoot",
-      "description": "Alternative open-source à Intercom",
+      "description": "Chatwoot est une plateforme de support client open-source avec chat en direct, email et réseaux sociaux.",
       "categories": [
-        "Livechat"
+        "Communication"
       ],
       "manual": true,
       "enabled": true,
@@ -818,7 +818,7 @@
     {
       "type": 2,
       "title": "Wekan",
-      "description": "Wekan est une alternative open-source à Trello.",
+      "description": "Wekan est un outil de gestion de projet open-source avec des tableaux Kanban pour organiser vos tâches.",
       "categories": [
         "Gestion de projet"
       ],
@@ -828,7 +828,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/wekan.yml",
-        "commit": "e41efd2b44639bf1155e61793d74a5adf6201fc6"
+        "commit": "e6b2618746684af6d23e18e8e082bc0f13fa8e3d"
       },
       "env": [
         {
@@ -860,9 +860,9 @@
     {
       "type": 2,
       "title": "Invoice-ninja",
-      "description": "Invoice Ninja est une application libre et open-source pour la facturation de vos clients.",
+      "description": "Invoice Ninja est une application open-source pour la facturation de vos clients.",
       "categories": [
-        "Facturation"
+        "Finance"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/r6TPGAZ.jpg",
@@ -953,9 +953,9 @@
     {
       "type": 2,
       "title": "Etherpad",
-      "description": "Etherpad est un éditeur en ligne Open Source qui permet une édition collaborative en temps réel.",
+      "description": "Etherpad est un éditeur en ligne open-source qui permet une édition collaborative en temps réel.",
       "categories": [
-        "Editeur"
+        "Docs"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/adNS6S5.png",
@@ -983,7 +983,7 @@
     {
       "type": 2,
       "title": "Ghost",
-      "description": "Ghost est une plate-forme entièrement open source et hackable pour la création et l'exploitation d'une publication en ligne moderne.",
+      "description": "Ghost est une plateforme open-source pour la création et la gestion d'une publication en ligne moderne.",
       "categories": [
         "Blog"
       ],
@@ -1019,9 +1019,9 @@
     {
       "type": 2,
       "title": "Castopod",
-      "description": "Castopod est une plateforme de podcasting open-source.",
+      "description": "Castopod est une plateforme de podcasting open-source pour héberger et diffuser vos podcasts.",
       "categories": [
-        "Podcast"
+        "Blog"
       ],
       "manual": true,
       "enabled": true,
@@ -1050,7 +1050,7 @@
     {
       "type": 2,
       "title": "Taiga",
-      "description": "Taiga est une plateforme de gestion de projet Open Source complète pour les startups et les développeurs agiles.",
+      "description": "Taiga est une plateforme de gestion de projet open-source complète pour les équipes agiles.",
       "categories": [
         "Gestion de projet"
       ],
@@ -1086,7 +1086,7 @@
     {
       "type": 2,
       "title": "Mautic",
-      "description": "Mautic est un logiciel d'automatisation du marketing (email, social, etc.)",
+      "description": "Mautic est un logiciel open-source d'automatisation du marketing pour gérer vos campagnes email, SMS et réseaux sociaux.",
       "categories": [
         "Marketing"
       ],
@@ -1117,9 +1117,9 @@
     {
       "type": 2,
       "title": "Dolibarr",
-      "description": "Dolibarr ERP & CRM est un progiciel web moderne et facile à utiliser pour la gestion de votre entreprise.",
+      "description": "Dolibarr ERP & CRM est un progiciel web open-source moderne et facile à utiliser pour la gestion de votre entreprise.",
       "categories": [
-        "ERP"
+        "Finance"
       ],
       "manual": true,
       "enabled": true,
@@ -1148,9 +1148,9 @@
     {
       "type": 2,
       "title": "Element",
-      "description": "Element est une application de collaboration open-source qui fournit des services de messagerie, de partage de fichiers et de visioconférence.",
+      "description": "Element est une application de collaboration open-source avec messagerie, partage de fichiers et visioconférence.",
       "categories": [
-        "Tchat"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/1QrflaM.png",
@@ -1164,9 +1164,9 @@
     {
       "type": 2,
       "title": "Metabase",
-      "description": "Le moyen le plus rapide et le plus simple de partager des données et des analyses au sein de votre entreprise.",
+      "description": "Metabase est un outil open-source d'analyse de données pour créer des tableaux de bord et explorer vos données.",
       "categories": [
-        "Tableau de bord"
+        "Analytics"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/AhEp6lV.png",
@@ -1174,13 +1174,13 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/metabase.yml",
-        "commit": "80e8ead675ddec855f36e01bf55883cb3dc4348c"
+        "commit": "51bbb3aa4105ebd74c50963a14b464675fb10df1"
       }
     },
     {
       "type": 2,
       "title": "Fathom",
-      "description": "Fathom Analytics fournit des statistiques de sites Web simples et utiles sans suivre ni stocker les données personnelles de vos utilisateurs.",
+      "description": "Fathom Analytics fournit des statistiques de sites web simples et utiles sans suivre ni stocker les données personnelles de vos utilisateurs.",
       "categories": [
         "Analytics"
       ],
@@ -1210,9 +1210,9 @@
     {
       "type": 2,
       "title": "Flarum",
-      "description": "Flarum est un logiciel de forum nouvelle génération qui rend les discussions en ligne amusantes.",
+      "description": "Flarum est un logiciel de forum open-source nouvelle génération qui rend les discussions en ligne amusantes.",
       "categories": [
-        "Forum"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/oUlWx8o.png",
@@ -1242,7 +1242,7 @@
       "title": "Jitsi",
       "description": "Jitsi Meet vous permet de rester en contact avec toutes vos équipes, qu'elles soient familiales, amicales ou collègues.",
       "categories": [
-        "Tchat vidéo"
+        "Communication"
       ],
       "manual": true,
       "enabled": true,
@@ -1251,7 +1251,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/jitsi.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "02217f96cff7fa9df677eda7e35973a3caa3f874"
       },
       "env": [
         {
@@ -1264,9 +1264,9 @@
     {
       "type": 2,
       "title": "Prestashop",
-      "description": "PrestaShop est un logiciel de e-commerce libre et open-source.",
+      "description": "PrestaShop est un logiciel open-source de e-commerce pour créer et gérer votre boutique en ligne.",
       "categories": [
-        "E-commerce"
+        "Finance"
       ],
       "manual": true,
       "enabled": true,
@@ -1293,9 +1293,9 @@
     {
       "type": 2,
       "title": "Mediawiki",
-      "description": "MediaWiki est un logiciel wiki libre, à l'origine utilisé par Wikipédia.",
+      "description": "MediaWiki est un logiciel wiki open-source, à l'origine utilisé par Wikipédia.",
       "categories": [
-        "Wiki"
+        "Docs"
       ],
       "manual": true,
       "enabled": true,
@@ -1337,9 +1337,9 @@
     {
       "type": 2,
       "title": "Commento",
-      "description": "Un système de commentaires rapide et sans ballonnement pour favoriser la discussion sur votre site Web.",
+      "description": "Commento est un système de commentaires open-source rapide et léger pour animer la discussion sur votre site.",
       "categories": [
-        "Commentaires"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/9FI6uV2.png",
@@ -1388,9 +1388,9 @@
     {
       "type": 2,
       "title": "Pixelfed",
-      "description": "PixelFed est une alternative libre et open-source à Instagram.",
+      "description": "PixelFed est un réseau social open-source de partage de photos décentralisé, sans publicité ni tracking.",
       "categories": [
-        "Réseau social"
+        "Social"
       ],
       "manual": true,
       "enabled": true,
@@ -1495,9 +1495,9 @@
     {
       "type": 2,
       "title": "SuiteCRM",
-      "description": "Application de gestion de la relation client open-source.",
+      "description": "SuiteCRM est une application open-source de gestion de la relation client pour suivre vos prospects et clients.",
       "categories": [
-        "CRM"
+        "Marketing"
       ],
       "manual": true,
       "enabled": true,
@@ -1530,9 +1530,9 @@
     {
       "type": 2,
       "title": "Wikijs",
-      "description": "Une application wiki open-source, moderne et puissante.",
+      "description": "Wiki.js est une application wiki open-source moderne avec édition Markdown et contrôle d'accès granulaire.",
       "categories": [
-        "Wiki"
+        "Docs"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/a6GELLc.png",
@@ -1560,9 +1560,9 @@
     {
       "type": 2,
       "title": "Passbolt",
-      "description": "Passbolt est un gestionnaire de mot de passe open source pour les équipes. Il permet de partager et de stocker en toute sécurité les informations d'identification.",
+      "description": "Passbolt est un gestionnaire de mots de passe open-source pour partager et stocker en toute sécurité les identifiants de votre équipe.",
       "categories": [
-        "Password manager"
+        "Sécurité"
       ],
       "manual": true,
       "enabled": true,
@@ -1615,9 +1615,9 @@
     {
       "type": 2,
       "title": "Wallabag",
-      "description": "Wallabag est une application libre et open source pour la sauvegarde de vos pages web.",
+      "description": "Wallabag est une application open-source pour sauvegarder vos pages web et les lire plus tard.",
       "categories": [
-        "Bookmark"
+        "Stockage"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/64kIbPN.png",
@@ -1631,9 +1631,9 @@
     {
       "type": 2,
       "title": "Calibre",
-      "description": "Calibre Web est une application Web offrant une interface claire pour la navigation, la lecture et le téléchargement de livres électroniques.",
+      "description": "Calibre Web est une application web open-source offrant une interface claire pour la navigation, la lecture et le téléchargement de livres électroniques.",
       "categories": [
-        "Books"
+        "Stockage"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/wYmdUN2.png",
@@ -1647,9 +1647,9 @@
     {
       "type": 2,
       "title": "Lufi",
-      "description": "Stocke et chiffre vos données dans votre navigateur et vous permet de les télécharger.",
+      "description": "Lufi est un outil open-source de partage de fichiers chiffrés, hébergeable soi-même.",
       "categories": [
-        "Storage"
+        "Stockage"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/Q4r221x.png",
@@ -1683,9 +1683,9 @@
     {
       "type": 2,
       "title": "Polr",
-      "description": "Un raccourcisseur d'URL open-source simple et rapide",
+      "description": "Polr est un raccourcisseur d'URL open-source simple et rapide.",
       "categories": [
-        "Raccourcisseur d'url"
+        "Marketing"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/KXpAzna.png",
@@ -1719,9 +1719,9 @@
     {
       "type": 2,
       "title": "Rainloop",
-      "description": "Rainloop est un client de messagerie simple, moderne et rapide basé sur le Web.",
+      "description": "Rainloop est un client de messagerie open-source simple, moderne et rapide basé sur le web.",
       "categories": [
-        "Webmail"
+        "Communication"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/4y32ar8.png",
@@ -1750,9 +1750,9 @@
     {
       "type": 2,
       "title": "Gogs",
-      "description": "Un service Git auto-hébergé.",
+      "description": "Gogs est un service Git open-source auto-hébergé léger pour héberger vos dépôts de code.",
       "categories": [
-        "Git"
+        "Stockage"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/pcAst1V.png",
@@ -1766,9 +1766,9 @@
     {
       "type": 2,
       "title": "CodiMD",
-      "description": "CodiMD vous permet de créer des notes collaboratives en temps réel.",
+      "description": "CodiMD est un éditeur open-source qui vous permet de créer des notes collaboratives en temps réel.",
       "categories": [
-        "Editeur"
+        "Docs"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/tJXNcVZ.png",
@@ -1829,9 +1829,9 @@
     {
       "type": 2,
       "title": "Pytition",
-      "description": "Un outil libre d’auto‐hébergement de pétitions.",
+      "description": "Pytition est un outil open-source auto-hébergé pour créer et gérer des pétitions en ligne.",
       "categories": [
-        "Pétitions"
+        "Social"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/7bcUMxB.png",
@@ -1845,7 +1845,7 @@
     {
       "type": 2,
       "title": "Posthog",
-      "description": "Open-source analytics",
+      "description": "PostHog est une plateforme d'analyse produit open-source pour comprendre le comportement des utilisateurs.",
       "categories": [
         "Analytics"
       ],
@@ -1867,9 +1867,9 @@
     {
       "type": 2,
       "title": "FreeScout",
-      "description": "Helpdesk Open-Source",
+      "description": "FreeScout est un helpdesk open-source léger pour gérer les emails de support client.",
       "categories": [
-        "Helpdesk"
+        "Marketing"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/yxKOhHb.jpg",
@@ -1896,9 +1896,9 @@
     {
       "type": 2,
       "title": "Mobilizon",
-      "description": "Alternative open-source à Facebook Events, Meetup, Eventbrite et autres plateformes de gestion d'événements.",
+      "description": "Mobilizon est une plateforme open-source pour créer et partager des événements sans dépendre des grandes plateformes.",
       "categories": [
-        "Événements"
+        "Social"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/OX6i2Ji.jpg",
@@ -1952,7 +1952,7 @@
     {
       "type": 2,
       "title": "Kresus",
-      "description": "Votre gestionnaire de finances personnelles pour vérifier vos comptes, de n'importe quelle banque, en un seul endroit.",
+      "description": "Kresus est un gestionnaire de finances personnelles open-source pour suivre vos comptes de toutes vos banques en un seul endroit.",
       "categories": [
         "Finance"
       ],
@@ -1994,9 +1994,9 @@
     {
       "type": 2,
       "title": "Searx",
-      "description": "Moteur de recherche open-source",
+      "description": "Searx est un métamoteur de recherche open-source qui agrège les résultats sans tracer les utilisateurs.",
       "categories": [
-        "Moteur de recherche"
+        "Sécurité"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/MBpK9LK.jpg",
@@ -2010,9 +2010,9 @@
     {
       "type": 2,
       "title": "NocoDB",
-      "description": "Alternative open-source à Airtable",
+      "description": "NocoDB est une plateforme no-code open-source qui transforme n'importe quelle base de données en tableur collaboratif.",
       "categories": [
-        "Spreadsheet"
+        "No-code"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/430br17.jpg",
@@ -2043,7 +2043,7 @@
     {
       "type": 2,
       "title": "Focalboard",
-      "description": "Alternative open-source à Trello",
+      "description": "Focalboard est un outil de gestion de projet open-source avec tableaux Kanban, calendriers et listes.",
       "categories": [
         "Gestion de projet"
       ],
@@ -2060,9 +2060,9 @@
     {
       "type": 2,
       "title": "Ntfy",
-      "description": "Alternative open-source à Pushbullet",
+      "description": "Ntfy est un service de notifications push open-source simple pour envoyer des alertes vers vos appareils.",
       "categories": [
-        "Notifications"
+        "Communication"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/xklY3FN.png",
@@ -2076,9 +2076,9 @@
     {
       "type": 2,
       "title": "Grist",
-      "description": "Alternative open-source à Google Sheets",
+      "description": "Grist est un tableur open-source hybride combinant les fonctionnalités d'un tableur et d'une base de données.",
       "categories": [
-        "Spreadsheet"
+        "No-code"
       ],
       "manual": true,
       "enabled": true,
@@ -2087,7 +2087,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/grist.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "cce36ee5c49b0f93abb02482bf1924cebc23e028"
       },
       "env": [
         {
@@ -2135,15 +2135,39 @@
               "value": "false"
             }
           ]
+        },
+        {
+          "name": "ASSISTANT_CHAT_COMPLETION_ENDPOINT",
+          "label": "Assistant chat completion endpoint",
+          "value": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "ASSISTANT_API_KEY",
+          "label": "Assistant API key",
+          "type": "password"
+        },
+        {
+          "name": "ASSISTANT_MODEL",
+          "label": "Assistant model",
+          "value": "gpt-4o-2024-08-06"
+        },
+        {
+          "name": "ASSISTANT_LONGER_CONTEXT_MODEL",
+          "label": "Assistant longer context model"
+        },
+        {
+          "name": "ASSISTANT_MAX_TOOL_CALLS",
+          "label": "Assistant max tool calls",
+          "value": "10"
         }
       ]
     },
     {
       "type": 2,
       "title": "Nocobase",
-      "description": "Alternative open-source à Airtable",
+      "description": "NocoBase est une plateforme no-code open-source pour créer des applications métier avec une interface flexible et extensible.",
       "categories": [
-        "Spreadsheet"
+        "No-code"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/S1zp24t.png",
@@ -2171,9 +2195,9 @@
     {
       "type": 2,
       "title": "Bookstack",
-      "description": "Application de gestion des connaissances open source",
+      "description": "BookStack est une application open-source de gestion des connaissances sous forme de livres, chapitres et pages.",
       "categories": [
-        "Connaissances"
+        "Docs"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/JJ4LnUD.png",
@@ -2272,9 +2296,9 @@
     {
       "type": 2,
       "title": "GoGoCarto",
-      "description": "Application pour créer des cartes collaboratives",
+      "description": "GoGoCarto est une application open-source pour créer des cartes collaboratives et interactives.",
       "categories": [
-        "Carte"
+        "Social"
       ],
       "manual": true,
       "enabled": false,
@@ -2289,9 +2313,9 @@
     {
       "type": 2,
       "title": "Appsmith",
-      "description": "Appsmith est un outil Nocode open-source pour créer des applications web et des tableaux de bord.",
+      "description": "Appsmith est un outil no-code open-source pour créer des applications web et des tableaux de bord.",
       "categories": [
-        "Low-code"
+        "No-code"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/BAY6klX.png",
@@ -2305,9 +2329,9 @@
     {
       "type": 2,
       "title": "Dokos",
-      "description": "Plateforme de gestion d'entreprise open-source",
+      "description": "Dokos est une plateforme open-source de gestion d'entreprise avec facturation, comptabilité et gestion de projets.",
       "categories": [
-        "ERP"
+        "Finance"
       ],
       "manual": true,
       "enabled": false,
@@ -2336,9 +2360,9 @@
     {
       "type": 2,
       "title": "Omeka",
-      "description": "Plateforme de publication destiné aux universités.",
+      "description": "Omeka est une plateforme open-source de publication et d'archivage numérique destinée aux universités et musées.",
       "categories": [
-        "Publication"
+        "Blog"
       ],
       "manual": true,
       "enabled": true,
@@ -2353,9 +2377,9 @@
     {
       "type": 2,
       "title": "Piwigo",
-      "description": "Gestionnaire de photos open-source",
+      "description": "Piwigo est un gestionnaire de photos open-source pour organiser et partager vos collections en ligne.",
       "categories": [
-        "Photos"
+        "Stockage"
       ],
       "manual": true,
       "enabled": true,
@@ -2384,9 +2408,9 @@
     {
       "type": 2,
       "title": "Moodle",
-      "description": "Plateforme d'apprentissage en ligne open-source",
+      "description": "Moodle est une plateforme d'apprentissage en ligne open-source pour créer et gérer des formations.",
       "categories": [
-        "LMS"
+        "Docs"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/Xb8jEOK.png",
@@ -2414,9 +2438,9 @@
     {
       "type": 2,
       "title": "Vaultwarden",
-      "description": "Gestionnaire de mot de passe open-source",
+      "description": "Vaultwarden est un serveur open-source compatible Bitwarden pour gérer vos mots de passe en toute sécurité.",
       "categories": [
-        "Password manager"
+        "Sécurité"
       ],
       "manual": true,
       "enabled": true,
@@ -2439,9 +2463,9 @@
     {
       "type": 2,
       "title": "Memos",
-      "description": "Outil de prise de notes léger et respectueux de la vie privée",
+      "description": "Memos est un outil open-source de prise de notes léger et respectueux de la vie privée.",
       "categories": [
-        "Notes"
+        "Docs"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/MlTef7m.png",
@@ -2455,7 +2479,7 @@
     {
       "type": 2,
       "title": "Automatisch",
-      "description": "Alternative open-source à Zapier",
+      "description": "Automatisch est un outil d'automatisation open-source pour synchroniser des données entre services web sans coder.",
       "categories": [
         "Automatisation"
       ],
@@ -2487,9 +2511,9 @@
     {
       "type": 2,
       "title": "Keila",
-      "description": "Gestionnaire de newsletter open-source",
+      "description": "Keila est un outil open-source d'envoi de newsletters avec segmentation des contacts et statistiques.",
       "categories": [
-        "Email"
+        "Marketing"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/260OnQX.jpeg",
@@ -2556,9 +2580,9 @@
     {
       "type": 2,
       "title": "Listmonk",
-      "description": "Gestionnaire de newsletter open-source",
+      "description": "Listmonk est un gestionnaire de newsletter open-source haute performance avec gestion des listes et des campagnes.",
       "categories": [
-        "Email"
+        "Marketing"
       ],
       "manual": true,
       "enabled": true,
@@ -2573,9 +2597,9 @@
     {
       "type": 2,
       "title": "Rallly",
-      "description": "Outil de planification de réunion simple",
+      "description": "Rallly est un outil open-source de planification de réunion pour trouver facilement un créneau commun.",
       "categories": [
-        "Planification"
+        "Communication"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/m2dqLMM.png",
@@ -2630,9 +2654,9 @@
     {
       "type": 2,
       "title": "Sympa",
-      "description": "Logiciel de gestion de listes de diffusion",
+      "description": "Sympa est un logiciel open-source de gestion de listes de diffusion pour animer vos communautés par email.",
       "categories": [
-        "Email"
+        "Communication"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/9wJD9XH.png",
@@ -2672,7 +2696,7 @@
     {
       "type": 2,
       "title": "Activepieces",
-      "description": "Automatisez vos tâches quotidiennes",
+      "description": "Activepieces est un outil d'automatisation open-source pour connecter vos applications et automatiser vos tâches.",
       "categories": [
         "Automatisation"
       ],
@@ -2688,9 +2712,9 @@
     {
       "type": 2,
       "title": "Postiz",
-      "description": "Votre outil ultime de planification des réseaux sociaux",
+      "description": "Postiz est un outil open-source de planification et de publication sur les réseaux sociaux.",
       "categories": [
-        "Automatisation"
+        "Marketing"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/wpUqmnb.png",
@@ -2704,9 +2728,9 @@
     {
       "type": 2,
       "title": "Twenty",
-      "description": "CRM open-source",
+      "description": "Twenty est un CRM open-source moderne et flexible pour gérer vos relations clients.",
       "categories": [
-        "CRM"
+        "Marketing"
       ],
       "manual": true,
       "enabled": true,
@@ -2738,9 +2762,9 @@
     {
       "type": 2,
       "title": "Outline",
-      "description": "Application de gestion des connaissances open-source",
+      "description": "Outline est un wiki open-source rapide et collaboratif pour centraliser la documentation de votre équipe.",
       "categories": [
-        "Connaissances"
+        "Docs"
       ],
       "manual": true,
       "enabled": true,
@@ -2749,7 +2773,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/outline.yml",
-        "commit": "07637c4f2d20f1f51c600afc5df42d9690bd1a51"
+        "commit": "8bccc92eb02203df64705cb45a298d039cc54aef"
       },
       "env": [
         {
@@ -2769,9 +2793,9 @@
     {
       "type": 2,
       "title": "Chartbrew",
-      "description": "Créez des tableaux de bord et des graphiques en quelques minutes",
+      "description": "Chartbrew est un outil open-source pour créer des tableaux de bord et des graphiques à partir de vos données.",
       "categories": [
-        "Tableau de bord"
+        "Analytics"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/4q5znvz.png",
@@ -2785,9 +2809,9 @@
     {
       "type": 2,
       "title": "Paheko",
-      "description": "Gestion d'association simple, complète et efficace",
+      "description": "Paheko est un outil open-source de gestion d'association simple, complet et efficace.",
       "categories": [
-        "Association"
+        "Finance"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/WiiBjb1.png",
@@ -2801,9 +2825,9 @@
     {
       "type": 2,
       "title": "Teable",
-      "description": "Tableur open-source et collaboratif",
+      "description": "Teable est un tableur open-source et collaboratif avec interface no-code pour gérer vos données.",
       "categories": [
-        "Spreadsheet"
+        "No-code"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/XZCiv1V.png",
@@ -2817,7 +2841,7 @@
     {
       "type": 2,
       "title": "Vikunja",
-      "description": "Gestionnaire de tâches open-source",
+      "description": "Vikunja est un gestionnaire de tâches open-source avec listes, tableaux Kanban et calendrier.",
       "categories": [
         "Gestion de projet"
       ],
@@ -2835,7 +2859,7 @@
       "title": "Authentik",
       "description": "Authentik est un fournisseur d'identité open-source axé sur la flexibilité et la polyvalence.",
       "categories": [
-        "Identité"
+        "Sécurité"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/qkJIEqu.png",
@@ -2865,7 +2889,7 @@
       "title": "Nextcloud-Talk",
       "description": "Nextcloud Talk protège vos communications mieux que les autres plateformes d'équipe comme Microsoft Teams ou Slack.",
       "categories": [
-        "Tchat vidéo"
+        "Communication"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/YNP1mii.png",
@@ -2900,9 +2924,9 @@
     {
       "type": 2,
       "title": "Collabora",
-      "description": "Collabora Online est une suite bureautique en ligne puissante basée sur LibreOffice.",
+      "description": "Collabora Online est une suite bureautique en ligne open-source puissante basée sur LibreOffice.",
       "categories": [
-        "Editeur"
+        "Docs"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/LVtcZqi.png",
@@ -2923,7 +2947,7 @@
     {
       "type": 2,
       "title": "Umami",
-      "description": "Umami est une alternative simple, rapide et respectueuse de la vie privée à Google Analytics.",
+      "description": "Umami est un outil d'analyse web open-source simple, rapide et respectueux de la vie privée.",
       "categories": [
         "Analytics"
       ],
@@ -2945,9 +2969,9 @@
     {
       "type": 2,
       "title": "Keycloak",
-      "description": "Keycloak est une solution open source de gestion des identités et des accès destinée aux applications et services modernes.",
+      "description": "Keycloak est une solution open-source de gestion des identités et des accès destinée aux applications et services modernes.",
       "categories": [
-        "Identité"
+        "Sécurité"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/b0zqDfd.png",
@@ -2973,9 +2997,9 @@
     {
       "type": 2,
       "title": "GlitchTip",
-      "description": "GlitchTip est une alternative open-source à Sentry. Il permet de suivre les erreurs de vos applications.",
+      "description": "GlitchTip est un outil open-source de suivi d'erreurs pour surveiller la santé de vos applications.",
       "categories": [
-        "Monitoring"
+        "Analytics"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/aUdsy6n.png",
@@ -3015,9 +3039,9 @@
     {
       "type": 2,
       "title": "Booklore",
-      "description": "Gestionnaire et lecteur de livres auto-hébergé",
+      "description": "Booklore est un gestionnaire et lecteur de livres open-source auto-hébergé pour organiser votre bibliothèque.",
       "categories": [
-        "Books"
+        "Stockage"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/HxiROwc.png",
@@ -3031,9 +3055,9 @@
     {
       "type": 2,
       "title": "Drawio",
-      "description": "Draw.io est un éditeur de diagrammes open-source.",
+      "description": "Draw.io est un éditeur de diagrammes open-source pour créer des schémas, organigrammes et diagrammes techniques.",
       "categories": [
-        "Editeur"
+        "Docs"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/qmTBRNg.png",
@@ -3047,9 +3071,9 @@
     {
       "type": 2,
       "title": "Healthchecks",
-      "description": "Healthchecks est un service de surveillance de vos tâches planifiées.",
+      "description": "Healthchecks est un outil open-source de surveillance de tâches planifiées (cron jobs) avec alertes en cas d'échec.",
       "categories": [
-        "Monitoring"
+        "Analytics"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/qLOjLMl.png",
@@ -3141,9 +3165,9 @@
     {
       "type": 2,
       "title": "Kosync",
-      "description": "Serveur de synchronisation pour KOReader.",
+      "description": "KOReader Sync est un serveur open-source de synchronisation de la progression de lecture pour KOReader.",
       "categories": [
-        "Ebook"
+        "Stockage"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/893Vvda.png",
@@ -3174,9 +3198,9 @@
     {
       "type": 2,
       "title": "Monitoring",
-      "description": "Stack de supervision complète avec Prometheus, Grafana, cAdvisor et Node Exporter.",
+      "description": "Stack de supervision open-source pour monitorer vos serveurs et conteneurs avec Prometheus, Grafana, cAdvisor et Node Exporter.",
       "categories": [
-        "Supervision"
+        "Analytics"
       ],
       "enabled": false,
       "logo": "https://i.imgur.com/6CFlVVm.png",
@@ -3223,7 +3247,7 @@
     {
       "type": 2,
       "title": "Solidtime",
-      "description": "Solidtime est une application open-source de suivi du temps de travail.",
+      "description": "Solidtime est une application open-source de suivi du temps de travail pour les freelances et les équipes.",
       "categories": [
         "Gestion de projet"
       ],
@@ -3234,7 +3258,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/solidtime.yml",
-        "commit": "9cd735f757c7cb7f5e373517219584d575a8b37c"
+        "commit": "7f3b249d11d548d47dd07d942eabf3c3934e84a1"
       },
       "env": [
         {
@@ -3281,9 +3305,9 @@
     {
       "type": 2,
       "title": "Uptime-Kuma",
-      "description": "Uptime Kuma est un outil de monitoring open-source auto-hébergé.",
+      "description": "Uptime Kuma est un outil de monitoring open-source pour surveiller la disponibilité de vos sites et services.",
       "categories": [
-        "Monitoring"
+        "Analytics"
       ],
       "enabled": true,
       "logo": "https://i.imgur.com/Ms4YoC4.png",
@@ -3292,6 +3316,23 @@
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/uptime-kuma.yml",
         "commit": "95279ba422c89d3706af83eae3557cd36409dbf0"
+      }
+    },
+    {
+      "type": 2,
+      "title": "Affine",
+      "description": "AFFiNE est un espace de travail open-source combinant notes, tableaux blancs et gestion de tâches.",
+      "categories": [
+        "Docs"
+      ],
+      "manual": true,
+      "enabled": true,
+      "logo": "https://i.imgur.com/uX5GuD4.png",
+      "website": "https://affine.pro",
+      "repository": {
+        "url": "https://github.com/ethibox/awesome-stacks",
+        "stackfile": "stacks/affine.yml",
+        "commit": "008138cfdd249fd6892dbeefc628e17524c55234"
       }
     }
   ]
