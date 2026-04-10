@@ -14,7 +14,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/nextcloud.yml",
-        "commit": "c238af9ef794300868e47688580c51d9f7f14469"
+        "commit": "74678c8770dcfb7874387885236761ee72e300fb"
       },
       "env": [
         {
@@ -95,7 +95,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/mattermost.yml",
-        "commit": "4aab0a6dcb81934d65eb610b0a901e637c0188c3"
+        "commit": "98913d5cf8580251b576ac06bfe7e589f3ad02cf"
       },
       "env": [
         {
@@ -128,7 +128,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/kanboard.yml",
-        "commit": "442ef3c0d3885651773960faf800fbb0ffa5b8a0"
+        "commit": "7a89dbdb9dadfac8d8cc86f5ef7ab8fc547acbea"
       },
       "env": [
         {
@@ -496,7 +496,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/zammad.yml",
-        "commit": "54f9bb2b7bd7247307416154875a697c068c7cc4"
+        "commit": "fd0b734b5e9c90981e055b4f5fa1c4f28e6f5097"
       }
     },
     {
@@ -529,7 +529,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/peertube.yml",
-        "commit": "905decbd4bacbc1c0d96853e0e45c4f2c6f7204e"
+        "commit": "12d0e45446d50ce4302645019173029f7bf41f38"
       },
       "env": [
         {
@@ -604,7 +604,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/n8n.yml",
-        "commit": "48846379f593f78b85fad04c4b10fe8a4470fe37"
+        "commit": "81d6869c49d1a66fff6dea1e376843a974c10842"
       },
       "env": [
         {
@@ -828,7 +828,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/wekan.yml",
-        "commit": "e6b2618746684af6d23e18e8e082bc0f13fa8e3d"
+        "commit": "c3024ca0907b3578be667d314a074464d4f1de44"
       },
       "env": [
         {
@@ -1304,7 +1304,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/mediawiki.yml",
-        "commit": "3989ede2797f4b56c546db0430191947956a878d"
+        "commit": "b99344df9286009d94e94d29568a4a123a08574d"
       },
       "env": [
         {
@@ -2197,7 +2197,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/nocobase.yml",
-        "commit": "050b6224849b57d9930ac48701e1a662ad4ac670"
+        "commit": "40dae0069a9dca88ef63a3602abb79a0d35fdf61"
       },
       "env": [
         {
