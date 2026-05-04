@@ -604,7 +604,7 @@
       "repository": {
         "url": "https://github.com/ethibox/awesome-stacks",
         "stackfile": "stacks/n8n.yml",
-        "commit": "81d6869c49d1a66fff6dea1e376843a974c10842"
+        "commit": "63a57f01666bfb9ea70d1405463cbb46b398bde6"
       },
       "env": [
         {
