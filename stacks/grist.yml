@@ -2,7 +2,7 @@
 
 services:
   web:
-    image: gristlabs/grist:${VERSION:-1.7.12}
+    image: gristlabs/grist:${VERSION:-1.7.13}
     command:
       - /bin/sh
       - -c
@@ -43,7 +43,7 @@ services:
       - GRIST_NODEMAILER_CONFIG={"host":"${SMTP_HOST:-smtp.example.com}","port":${SMTP_PORT:-587},"auth":{"user":"${SMTP_USERNAME}","pass":"${SMTP_PASSWORD}"}}
       - GRIST_NODEMAILER_SENDER={"name":"Grist","email":"${SMTP_FROM:-noreply@example.com}"}
     healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:8484/api/orgs', res => process.exit(res.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1));"]
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8484/o/docs/login', {redirect: 'manual'}).then(r => process.exit(r.status === 302 ? 0 : 1)).catch(() => process.exit(1))"]
     deploy:
       resources:
         limits:
